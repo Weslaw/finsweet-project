@@ -1,0 +1,1677 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*******************************************************************************/
+
+
+.wrapper{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*********************** Section 1 *******************************/
+
+.container-first{
+    background-color: #1C1E53;
+}
+
+.container-first header .burger{
+    display: none;
+}
+
+.container-first header .menu ul{
+    display: flex;
+}
+
+.container-first header .menu ul li a{
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 175%;
+    font-weight: 500;
+    color: #BBBBCB;
+    text-decoration: none;
+    transition: 0.8s;                                    /**отвечает за скорость появления цвета при наведении**/
+}
+
+.container-first header .menu ul li a:hover{                                    /**эффект при наведении на ссылку**/
+    color: #fff;
+}
+
+.container-first header .menu ul li.first-link a{
+    color: #fff;
+}
+
+.container-first header .menu ul li{
+    margin-right: 32px;
+}
+
+.container-first header .menu ul li.contact-btn{
+    margin-right: 0px;
+    margin-left: 16px;
+}
+
+.container-first header .menu ul li.contact-btn a{
+    color: #fff;
+    padding: 16px 48px;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    transition: 0.8s;                                    /**отвечает за скорость появления цвета при наведении**/
+}
+
+.container-first header .menu ul li.contact-btn a:hover{                 /**эффект при наведении на кнопку**/
+    background-color: #fff;
+    color: #1C1E53;
+}
+
+.container-first header{                                              /**настройка отступов между объектами в header**/
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container-first .head-content{                                                        /**настройка отступов для второго блока**/
+    padding-top: 126px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: space-between;                                                         /**выравнивание на всю ширину**/
+    align-items: center;                                                         /**выравнивание по центру**/
+}
+
+.container-first .head-content .left-content{
+    width: 582px;
+    font-family: 'Poppins';
+}
+
+.container-first .head-content .right-content{                                                         /**настройка ширины картинки**/
+    width: 638px;
+}
+
+.container-first .head-content .left-content h1{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 137%;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.container-first .head-content .left-content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: rgba(255, 255, 255, 0.7);
+    width: 562px;
+    margin-bottom: 48px;
+}
+
+.container-first .head-content .left-content .btn-wrap .btn-work{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1B1C2B;
+    line-height: 177%;
+    text-decoration: none;
+    padding: 16px 56px;
+    border-radius: 41px;
+    background: #FCD980;
+    transition: 0.8s;
+    margin-right: 40px;
+}
+
+.container-first .head-content .left-content .btn-wrap .btn-work:hover{
+    background-color: #1b1c2b;
+    color:#FCD980;
+}
+
+.container-first .head-content .left-content .btn-wrap .btn-price{
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+
+.container-first .head-content .left-content .btn-wrap .btn-price span{
+    margin-left: 16px;
+}
+
+.container-first .head-content .right-content img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+/********************** Container Work**************************/
+
+.container-work .content{
+    margin-top: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 128px;
+    row-gap: 48px;
+}
+
+.container-work .content{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.container-work .content .steps{
+    display: grid;
+    grid-template-columns: 328px 328px;
+    grid-template-columns: 178px 178px;
+    column-gap: 142px;   /**              отступы        **/
+    row-gap: 48px;   /**              отступы        **/
+}
+
+
+.container-work .content .work-info h3{
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 133.333%;
+    color: #282938;
+}
+
+.container-work .content .work-info p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: #282938;
+    width: 405px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.container-work .content .work-info a{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177.778%;
+    color: #2405F2;
+    text-decoration: none;
+}
+
+.container-work .content .work-info a span{
+    margin-left: 16px;
+}
+
+.container-work .content .first-item h5,
+.container-work .content .second-item h5,
+.container-work .content .third-item h5,
+.container-work .content .fourth-item h5{
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #282938;
+    margin-top: 16px;
+}
+
+.container-work .content .first-item p,
+.container-work .content .second-item p,
+.container-work .content .third-item p,
+.container-work .content .fourth-item p{
+    width: 303px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: #282938;
+    padding-top: 8px;
+}
+
+.container-work .backround{
+    background-color: #F4F6FC ;
+    width: 100%;
+    height: 661px;
+    margin-top: -664px;
+}
+
+
+
+
+
+/*********************** Container Project *******************************/
+
+.container-projects{
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.container-projects .head-info h3{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 133.333%;
+    color: #282938;
+}
+
+.container-projects .head-info a{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #282938;
+    text-decoration: none;
+    align-self: center;
+    justify-self: end;
+}
+
+.container-projects .head-info a span{
+    margin-left: 16px;
+}
+
+.container-projects .head-info{ /**              выравниваем с помощью GRID        **/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-projects .projects{ /**              выравниваем с помощью GRID        **/
+    display: grid;
+    grid-template-columns: 843px 405px;
+    grid-template-rows: 284px 284px;
+    column-gap: 32px;   /**              отступы        **/
+    row-gap: 32px;   /**              отступы        **/
+    margin-top: 64px;
+    font-family: Poppins;
+}
+
+.container-projects .projects .first-item{ 
+    grid-column: 1;
+    grid-row: 1 / span 2;  /**              делаем смещение на 2 ячейки        **/
+    position: relative;   /**              появление при наведении        **/
+}
+
+.container-projects .projects .first-item .project-info{
+    width: 398px;
+    height: 100%;
+    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    position: absolute;   /**              появление при наведении        **/
+    top: 0;     /**              появление при наведении        **/
+    left: 0;     /**              появление при наведении        **/
+}
+
+.container-projects .projects .first-item .project-info h4,
+.container-projects .projects .second-item .project-info h4,
+.container-projects .projects .third-item .project-info h4{
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 24px;
+    color: #fff;
+}
+
+.container-projects .projects .first-item .project-info h4{
+    padding-left: 48px;
+    padding-top: 312px;
+    padding-bottom: 16px;
+    padding-right: 35px;
+}
+
+.container-projects .projects .first-item .project-info p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    padding-left: 48px;
+    padding-bottom: 40px;
+    width: 293px;
+}
+
+.container-projects .projects .first-item .project-info a,
+.container-projects .projects .second-item .project-info a,
+.container-projects .projects .third-item .project-info a{
+    color: #FCD980;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    margin-left: 48px;
+    text-decoration: none;
+}
+
+.container-projects .projects .first-item .project-info a span{
+    margin-left: 16px;
+}
+
+.container-projects .projects .first-item img,
+.container-projects .projects .second-item img,
+.container-projects .projects .third-item img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-projects .projects .second-item,
+.container-projects .projects .third-item{
+    position: relative;
+}
+
+.container-projects .projects .second-item .project-info,
+.container-projects .projects .third-item .project-info{
+    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.container-projects .projects .second-item:hover .project-info,                  /**эффект при наведении **/
+.container-projects .projects .third-item:hover .project-info{                  /**эффект при наведении **/
+    opacity: 1;
+}
+
+.container-projects .projects .second-item .project-info h4,
+.container-projects .projects .third-item .project-info h4{
+    padding: 129px 60px 10px 56px;
+}
+
+.container-projects .projects .second-item .project-info a,
+.container-projects .projects .third-item .project-info a{
+    margin-left: 56px;
+}
+
+.container-projects .projects .second-item .project-info span,
+.container-projects .projects .third-item .project-info span{
+    margin-left: 16px;
+}
+
+
+/*********************** Section 4 features *******************************/
+
+.container-features{
+    font-family: 'Poppins';
+    background-color: #F4F6FC;
+    height: 1191px;
+}
+
+.container-features .content .about-content{
+    display: grid;
+    grid-template-columns: 1/ span 2;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 47px;
+
+}
+
+.container-features .content .about-content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #282938;
+    margin-top: 128px;
+    text-align: center;
+}
+
+.container-features .content .about-content h3{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 133%;
+    color: #282938;
+    width: 630px;
+     text-align: center;
+}
+
+.container-features .content .box-content{
+    display: grid;
+    grid-template-columns: 405px 405px 405px;
+    grid-template-rows: 316px 316px 316px;
+    column-gap: 32px;
+    row-gap: 24px;
+}
+
+.container-features .content .box-content .box-client img,
+.container-features .content .box-content .box-round img,
+.container-features .content .box-content .box-customization img,
+.container-features .content .box-content .box-support img,
+.container-features .content .box-content .box-delivery img,
+.container-features .content .box-content .box-hands img{
+    padding-top: 58px;
+    margin-bottom: 22px;
+    padding-left: 48px;
+}
+
+.container-features .content .box-content .box-client h5,
+.container-features .content .box-content .box-round h5,
+.container-features .content .box-content .box-customization h5,
+.container-features .content .box-content .box-support h5,
+.container-features .content .box-content .box-delivery h5,
+.container-features .content .box-content .box-hands h5{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #282938;
+    margin-bottom: 12px;
+    padding-left: 48px;
+}
+
+.container-features .content .box-content .box-client p,
+.container-features .content .box-content .box-round p,
+.container-features .content .box-content .box-customization p,
+.container-features .content .box-content .box-support p,
+.container-features .content .box-content .box-delivery p,
+.container-features .content .box-content .box-hands p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: rgba(40, 41, 56, 0.7);
+    margin-bottom: 12px;
+    padding-bottom: 48px;
+    padding-left: 48px;
+    padding-right: 32px;
+}
+
+.container-features .content .box-content .box-client,
+.container-features .content .box-content .box-round,
+.container-features .content .box-content .box-customization,
+.container-features .content .box-content .box-support,
+.container-features .content .box-content .box-delivery,
+.container-features .content .box-content .box-hands{
+    background-color: #fff;
+}
+
+
+/*********************** Section 5 Comments *******************************/
+
+.container-comments{
+    background-color: rgba(244, 246, 252, 0.5);
+    font-family: 'Poppins';
+}
+
+.container-comments .owl-carousel{
+    position: relative;
+}
+
+.container-comments .owl-carousel .owl-nav .owl-prev{
+    display: inline-grid;
+    grid-template-columns: 48px;
+    grid-template-rows: 48px;
+    align-items: center; /**              центрирование стрелочки внутри кнопки        **/
+    justify-items: center;/**              центрирование стрелочки внутри кнопки        **/
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('../images/left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 20px;
+    right: 59px;
+}
+
+.container-comments .owl-carousel .owl-nav .owl-next{
+    display: inline-grid;
+    grid-template-columns: 48px;
+    grid-template-rows: 48px;
+    align-items: center; /**              центрирование стрелочки внутри кнопки        **/
+    justify-items: center;/**              центрирование стрелочки внутри кнопки        **/
+    background-color: #5239FA;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('../images/right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.container-comments .owl-carousel .owl-nav .owl-prev span,
+.container-comments .owl-carousel .owl-nav .owl-next span{
+    display: none;
+}
+
+
+.container-comments .box-comments{
+    display: grid;
+    grid-template-columns: 327px 843px;
+    column-gap: 110px;
+    padding: 128px 0;
+}
+
+.container-comments .box-comments .about-comments h3{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 147%;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+.container-comments .box-comments .about-comments p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: rgba(40, 41, 56, 0.7);
+}
+
+.container-comments .box-comments .slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-comments .box-comments .slider .descr{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #282938;
+    grid-column: 1/ span2;
+    margin-bottom: 48px;
+}
+
+.container-comments .box-comments .slider .author{
+    display: grid;
+    grid-template-columns: 52px 183px;
+    grid-template-rows: 56px;
+    column-gap: 14px;
+}
+
+.container-comments .box-comments .slider .author img{
+    width: 52px;
+    height: 52px;
+    object-fit: cover;  /**              убираем искажения        **/
+    border-radius: 50%; /**              делаем картинку круглой        **/
+    object-position: 0 -8px; /**              выравниваем относительно текста справа        **/
+    align-self: center;
+}
+
+.container-comments .box-comments .slider .author .name{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177%;
+    color: #282938;
+}
+
+.container-comments .box-comments .slider .author .more-info{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 233%;
+    color: #282938;
+    margin-top: -4px;
+}
+
+.container-comments .box-comments .slider .btns .left-btn,
+.container-comments .box-comments .slider .btns .right-btn{
+    display: inline-grid;
+    grid-template-columns: 48px;
+    grid-template-rows: 48px;
+    align-items: center; /**              центрирование стрелочки внутри кнопки        **/
+    justify-items: center;/**              центрирование стрелочки внутри кнопки        **/
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-comments .box-comments .slider .btns .right-btn{
+    background-color: #5239FA;
+    margin-left: 10px;
+}
+
+.container-comments .box-comments .slider .btns{
+    justify-self: end; /**              позиционирование относительно блока        **/
+    align-self: end;  /**              позиционирование относительно блока        **/
+}
+
+
+
+
+
+/*********************** Container 6 Questions *******************************/
+
+
+
+.container-questions{
+    padding: 128px 0; /**              отступы между блокам        **/
+    font-family: 'Poppins';
+}
+
+.container-questions .questions-info{ /**              разметка блока        **/
+    display: grid;
+    grid-template-columns: 328px 843px;
+    column-gap: 109px;
+}
+
+.container-questions .questions-info .left-side h3{ /**              левая сторона        **/
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 147%;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+.container-questions .questions-info .left-side a{ /**              левая сторона        **/
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177%;
+    color: rgba(36, 5, 242, 0.87);
+    text-decoration: none;
+}
+
+.container-questions .questions-info .right-side .question-item{ /**              разметка правой стороны, первый вопрос        **/
+    display: grid;
+    grid-template-columns: 110px 624px 1fr;
+    border-bottom: 2px solid #ECECF1;  /**              Линия        **/
+    margin-bottom: 32px; /**              отступы между вопросами        **/
+    padding-bottom: 16px; /**              отступы между вопросами        **/
+}
+
+.container-questions .questions-info .right-side .question-item:last-child{ /**              убрали линию под последним вопросом        **/
+    border-bottom: none;
+}
+
+.container-questions .questions-info .right-side .question-item .close{ /**              позиционирование крестика        **/
+    align-self: start;
+    justify-self: end;
+    line-height: 36px;
+}
+
+.container-questions .questions-info .right-side .question-item .counter{ /**              стили номеров вопросов        **/
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #2405F2;
+    margin-left: 27px;
+}
+
+.container-questions .questions-info .right-side .question-item .question h5{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+.container-questions .questions-info .right-side .question-item .question p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177.%;
+    color: rgba(40, 41, 56, 0.87);
+    padding-bottom: 32px;
+}
+
+.container-questions .questions-info .right-side .question-item .question p.answer-hide{ /**              скрываем ответы на вопросы        **/
+    display: none;
+}
+
+.container-questions .questions-info .right-side .question-item .plus{ /**              превращение плюсов в крестики        **/
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+/*********************** Container 7 building *******************************/
+
+
+
+.container-building{
+    display: grid;
+    grid-template-columns: 656px 624px;
+    font-family: 'Poppins';
+}
+
+.container-building .left-info{
+    background-image: url(../images/building.jpg);
+    background-size: cover; /**              кбираем искажение        **/
+    background-position: center; /**              позиционирование картинки по центру        **/
+}
+
+.container-building .left-info .content{
+    height: 100%;
+    background-color: rgba(28, 30, 83, 0.5);
+}
+
+.container-building .left-info .content h3{
+    width: 464px;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 137%;
+    color: #FFF;
+    padding-bottom: 24px;
+    padding-top: 96px;
+    margin: 0 auto; /**              центрирование текста        **/
+}
+
+.container-building .left-info .content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #FFF;
+    margin: 0 auto; /**              центрирование текста        **/
+    width: 464px;
+}
+
+.container-building .right-info{
+    background-color: #1C1E53;
+}
+
+.container-building .right-info h4{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #fff;
+    padding-top: 96px;
+    padding-bottom: 16px;
+    width: 432px;
+    margin: 0 auto;
+}
+
+.container-building .right-info p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #F4F6FC;
+    padding-bottom: 40px;
+    width: 432px;
+    margin: 0 auto;
+}
+
+.container-building .right-info form{
+    max-width: 432px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+}
+
+.container-building .right-info form input{
+    width: 100%;
+    height: 64px;
+    margin-bottom: 16px; /**              отступ между полями        **/
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    background-color: #1C1E53;
+    color: #fff; /**              цвет вводимого текста        **/
+    outline: 0;/**              отключаем выделение рамок при нажатии        **/
+    font-size: 16px;
+    line-height: 175%;
+    padding-left: 32px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container-building .right-info form input::placeholder {
+    color: rgba(244, 246, 252, 0.5);
+}
+
+.container-building .right-info form input::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgba(244, 246, 252, 0.5);
+}
+
+.container-building .right-info form button{
+    font-family: 'Manrope';
+    background-color: #FCD980;
+    border-radius: 41px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 28px;
+    text-align: center; /**              центрируем текст        **/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #1B1C2B;
+    font-weight: 600;
+    line-height: 177%;
+    border: 0;
+    cursor: pointer; /**              меняем курсор на клик        **/
+    transition: 0.8s; /**              эффект при наведении        **/
+}
+
+.container-building .right-info form button:hover{ /**           эффект при наведении       **/
+    background-color: #1B1C2B;
+    color: #FCD980;
+}
+
+.container-building .right-info form .btn-wrap{
+    text-align: center; /**              центрирование текста        **/
+}
+
+.container-building .right-info form .btn-wrap a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177.778%;
+    text-decoration: none;;
+}
+
+.container-building .right-info form .btn-wrap span{
+    margin-left: 13px;
+}
+
+
+
+
+/*********************** Container 8 Blog *******************************/
+
+
+.container-blog{
+    padding: 128px 0; /**              отступы между блокам        **/
+    font-family: 'Poppins';
+}
+
+.container-blog .blog-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+.container-blog .blog-name{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 133%;
+    color: #282938;
+    margin-bottom: 64px;
+}
+
+.container-blog .blog-content .blog-1 .text{
+    width: 405px;
+}
+.container-blog .blog-content .blog-1 .text h5,
+.container-blog .blog-content .blog-2 .text h5,
+.container-blog .blog-content .blog-3 .text h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: rgba(40, 41, 56, 0.7);
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.container-blog .blog-content .blog-1 .text h4,
+.container-blog .blog-content .blog-2 .text h4,
+.container-blog .blog-content .blog-3 .text h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+.container-blog .blog-content .blog-1 .text p,
+.container-blog .blog-content .blog-2 .text p,
+.container-blog .blog-content .blog-3 .text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: #282938;
+    margin-bottom: 32px;
+}
+
+.container-blog .blog-content .blog-1 .text a,
+.container-blog .blog-content .blog-2 .text a,
+.container-blog .blog-content .blog-3 .text a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #282938;
+    text-decoration: none;
+}
+
+.container-blog .blog-content .blog-1 .text a span,
+.container-blog .blog-content .blog-2 .text a span,
+.container-blog .blog-content .blog-3 .text a span{
+    margin-left: 12px;
+}
+
+
+
+
+/*********************** Container 9 Footer *******************************/
+
+.container-footer{
+    background-color: #1C1E53;
+    font-family: 'Poppins';
+}
+
+.container-footer .content{
+    display: grid;
+    grid-template-columns: 517px 399px;
+    column-gap: 140px;
+}
+
+.container-footer .content .content-left{
+    padding-top: 100px;
+}
+
+.container-footer .content .content-left .title{
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: rgba(244, 246, 252, 0.8);
+    width: 399px;
+    margin-bottom: 86px;
+}
+
+.container-footer .content .content-left .contacts-info{
+    background-color: #FCD980;
+    display: grid;
+    grid-template-columns: 181px 133px;
+    column-gap: 29px;
+    padding: 18px 137px 16px 37px;
+}
+
+.container-footer .content .content-left .contacts-info h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177%;
+    color: #282938;
+    margin-bottom: 1px;
+}
+
+.container-footer .content .content-left .contacts-info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: rgba(40, 41, 56, 0.8);
+}
+
+.container-footer .content .content-right{
+    padding-top: 96px;
+}
+
+.container-footer .content .content-right h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 133.333%;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.container-footer .content .content-right .title-two{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: rgba(244, 246, 252, 0.8);
+    margin-bottom: 28px;
+    width: 399px;
+}
+
+.container-footer .content .content-right .social-link{
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*********************** Container 10 End *******************************/
+
+.container-end{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 241px 473px;
+    column-gap: 567px;
+}
+
+.container-end .left-info p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #282938;
+}
+
+.container-end .right-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-end .right-info a{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+    color: #282938;
+    text-decoration: none;
+}
+
+
+
+
+/*********************** Adaptives *******************************/
+
+
+
+
+@media screen and (max-width: 1300px){
+.center{
+    width: 95%;
+}
+
+.container-first .head-content .left-content{
+    width: 45%;
+}
+
+.container-first .head-content .right-content{
+    width: 50%;
+}
+
+.container-first .head-content .left-content p{
+    width: 100%;
+}
+
+.container-projects .projects{  /**              адаптив второго блока        **/
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;  /**              меняем отступы второго блока        **/
+    row-gap: 20px;   /**              меняем отступы второго блока        **/
+    }
+
+.container-work .content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 60px;
+    margin-top: 128px;
+}
+
+.container-work .content .steps{
+    column-gap: 240px;
+}
+
+.container-work .backround{
+    height: 900px;
+    margin-top: -960px;
+}
+
+.container-comments .box-comments{ /**              меняем отступы 5 блока        **/
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+}
+
+.container-features .content .box-content{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 380px 380px;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.container-questions .questions-info{ /**           Отступы между левой и правой стороной 6 блока           **/
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+}
+
+.container-questions .questions-info .right-side .question-item{ /**           Отступы между цифрами текстом и крестиком           **/
+    grid-template-columns: 1fr 75% 1fr;
+}
+
+.container-blog .blog-content{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-blog .blog-content .blog-1 img,
+.container-blog .blog-content .blog-2 img,
+.container-blog .blog-content .blog-3 img{
+    width: 300px;
+}
+
+.container-blog .blog-content .blog-1 .text,
+.container-blog .blog-content .blog-2 .text,
+.container-blog .blog-content .blog-3 .text{
+    width: 300px;
+}
+
+.container-building{
+    grid-template-columns: calc(50% + 16px) calc(50% - 16px); /**           сжимаем блоки           **/
+}
+
+.container-end{
+grid-template-columns: calc(30% + 10px) calc(50% - 10px);
+column-gap: 200px;
+}
+
+.container-footer .content{
+    column-gap: 80px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+.container-first header .burger{
+    display: block;
+    height: 20px;
+}
+
+.container-first header .burger i{
+    display: block;
+    width: 30px;
+    margin: 3px 0;
+    height: 3px;
+    background: #fff;
+}
+
+.container-first header .menu{
+    display: none;
+}
+
+.container-first header .menu.menu-show{
+    display: block;
+}
+
+.container-first .head-content .left-content h1{ /**              уменьшаем размер главного текста        **/
+    font-size: 42px;
+}
+
+.container-first .head-content .left-content .btn-wrap .btn-work{
+    display: block;  /**              растягиваем на всю ширину кнопку        **/
+    text-align: center; /**              выравниваем по центру        **/
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.container-first .head-content .left-content .btn-price{
+    display: block;  /**              растягиваем на всю ширину кнопку        **/
+    text-align: center; /**              выравниваем по центру        **/
+}
+
+.container-first .head-content{  /**              меняем отступы        **/
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-projects .projects{  /**              адаптив второго блока        **/
+    grid-template-columns: 1fr 1fr; /**              меняем размеры блоков с картинками        **/
+}
+
+.container-projects .projects .first-item .project-info{
+    width: 90%;
+}
+
+.container-projects{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.container-projects .projects .first-item .project-info p{ /**              адаптив текста левого блока        **/
+    padding-right: 35px;
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.container-comments .box-comments .about-comments h3,
+.container-questions .questions-info .left-side h3{ /**              меняем размеры текста        **/
+    font-size: 26px;
+}
+
+.container-comments .box-comments .slider .descr{ /**              меняем размеры текста        **/
+    font-size: 22px;
+}
+
+.container-comments .box-comments,
+  .container-questions { /**              меняем оснавные отступы        **/
+    padding: 60px 0;
+}
+
+.container-features{
+    margin-bottom: 84px;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.container-features .content .box-content{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2/span 3;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.container-questions .questions-info .right-side .question-item .counter{ /*  отступ цифры слева */
+    margin-left: 15px;
+}
+
+.container-blog .blog-content{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;  /**              меняем отступы второго блока        **/
+    row-gap: 60px;
+}
+
+.container-blog .blog-content .blog-1 img,
+.container-blog .blog-content .blog-2 img,
+.container-blog .blog-content .blog-3 img{
+    width: 350px;
+}
+
+.container-blog .blog-content .blog-1 .text,
+.container-blog .blog-content .blog-2 .text,
+.container-blog .blog-content .blog-3 .text{
+    width: 350px;
+}
+
+.container-building .left-info .content h3{
+    font-size: 40px;
+    width: 95%;
+}
+
+.container-building .left-info .content p,
+.container-building .right-info h4,
+.container-building .right-info p,
+.container-building .right-info form{
+    width: 95%;
+}
+
+
+.container-end{
+grid-template-columns: calc(30% + 5px) calc(50% - 5px);
+column-gap: 160px;
+}
+
+.container-footer .content{
+    grid-template-columns: calc(40% + 10px) calc(40% - 10px);
+}
+
+.container-footer .content .content-left .contacts-info{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.container-footer .content .content-left .title{
+    width: 320px;
+}
+
+.container-footer .content .content-right .title-two{
+    width: 380px;
+}
+}
+
+
+
+@media screen and (max-width: 768px){
+.container-first .head-content{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;      /**              меняем местами картинку и текст        **/
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container-first .head-content .left-content{
+    width: 100%;
+}
+
+.container-first .head-content .right-content{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-work .content{
+    margin-top: 128px;
+}
+
+.container-work .content .steps{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container-work .backround{
+    height: 1300px;
+    margin-top: -1360px;
+}
+
+.container-projects .projects .first-item,
+.container-projects .projects .second-item,
+.container-projects .projects .third-item{
+    grid-column: 1/span2;
+}
+
+.container-projects .head-info h3{
+    font-size: 32px;
+}
+
+.container-comments .box-comments{ /**              делаем одну колонку        **/
+    grid-template-columns: 1fr;
+}
+
+.container-comments .box-comments .slider{ /**              меняем отступы        **/
+    margin-top: 30px;
+}
+
+.container-comments .box-comments .slider .descr{ /**              меняем отступы        **/
+    margin-bottom: 20px;
+}
+
+.container-features .content .box-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 12px;
+}
+
+.container-features .content .about-content h3{
+    font-size: 32px;
+    text-align: left;
+    width: auto;
+}
+
+.container-features .content .about-content p{
+    text-align: left;
+    width: auto;
+}
+
+.container-questions .questions-info{ /**  позиционирование блока в один столбец  **/
+    grid-template-columns: 1fr;
+}
+
+.container-questions .questions-info .right-side{ /**  отступы между вопросами  **/
+    padding-top: 40px;
+}
+
+.container-features .content .box-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    row-gap: 20px;
+}
+
+.container-blog .blog-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    row-gap: 60px;
+}
+
+.container-blog .blog-content .blog-1 img,
+.container-blog .blog-content .blog-2 img,
+.container-blog .blog-content .blog-3 img{
+    width: 700;
+}
+
+.container-blog .blog-content .blog-1 .text,
+.container-blog .blog-content .blog-2 .text,
+.container-blog .blog-content .blog-3 .text{
+    width: auto;
+}
+
+.container-blog .blog-name{
+    font-size: 32px;
+    width: auto;
+}
+
+.container-building{
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.container-building .left-info .content h3{
+    font-size: 32px;
+    padding-top: 40px;
+}
+
+.container-building .left-info .content p{
+    padding-bottom: 40px;
+}
+
+.container-building .right-info h4{
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+.container-building .right-info form{
+    max-width: 95%;
+}
+
+.container-end{
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.container-end .left-info{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.container-footer .content{
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+}
+
+.container-footer .content .content-left .contacts-info{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding: 18px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 425px){
+.container-first .head-content .left-content h1{
+    font-size: 24px;
+}
+
+.container-work{
+    margin-top: -60px;
+}
+
+.container-work .content .work-info h3{
+    font-size: 20px;
+}
+
+.container-work .content .work-info p{
+    width: 260px;
+}
+
+.container-work .content .first-item h5,
+.container-work .content .second-item h5,
+.container-work .content .third-item h5,
+.container-work .content .fourth-item h5{
+    font-size: 24px;
+}
+
+.container-work .content .first-item p,
+.container-work .content .second-item p,
+.container-work .content .third-item p,
+.container-work .content .fourth-item p{
+    width: 260px;
+}
+
+.container-projects .projects .first-item .project-info h4{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.container-projects .projects .first-item .project-info p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-projects .projects .first-item .project-info a{
+    margin-left: 20px;
+}
+
+.container-projects .projects .second-item .project-info h4,
+.container-projects .projects .third-item .project-info h4{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.container-projects .projects .second-item .project-info a,
+.container-projects .projects .third-item .project-info a{
+    margin-left: 20px;
+}
+
+.container-projects .head-info{
+    grid-template-columns: 1fr;
+}
+
+.container-projects .head-info a{
+    justify-self: start;
+}
+
+.container-projects{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-projects .projects{
+    margin-top: 30px;
+}
+
+.container-projects .head-info h3{
+    font-size: 20px;
+}
+
+.container-comments .box-comments .slider .btns{ /**              выравниваем кнопки по центру        **/
+    grid-column: 1/ span2;
+    margin-top: 15px;
+    justify-self: center;
+}
+
+.container-features .content{
+    margin-top: -80px;
+}
+
+.container-features .content .about-content h3{
+    font-size: 20px;
+}
+
+.container-features .content .about-content{
+    margin-bottom: 10px;
+}
+
+.container-questions .questions-info .right-side .question-item .counter{
+    margin-left: 0;
+    grid-columns: 1/2;
+}
+
+.container-questions .questions-info .right-side .question-item .question{
+    grid-column: 1/span 2;
+}
+
+.container-questions .questions-info .right-side .question-item .close{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.container-blog .blog-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    row-gap: 60px;
+}
+
+.container-blog .blog-content .blog-1 img,
+.container-blog .blog-content .blog-2 img,
+.container-blog .blog-content .blog-3 img{
+    width: 310px;
+}
+
+.container-blog .blog-content .blog-1 .text,
+.container-blog .blog-content .blog-2 .text,
+.container-blog .blog-content .blog-3 .text{
+    width: auto;
+}
+
+.container-blog .blog-name{
+    font-size: 24px;
+}
+
+.container-end .right-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 14px;
+    align-self: center;
+}
+
+.container-end .right-info a{
+    font-size: 14px;
+}
+
+.container-end .left-info{
+    margin-top: 40px;
+}
+
+.container-end .left-info p{
+    font-size: 14px;
+}
+
+.container-footer .content{
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+}
+
+.container-footer .content .content-left .contacts-info{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.container-footer .content .content-right .title-two{
+    width: 300px;
+}
+
+}
+
